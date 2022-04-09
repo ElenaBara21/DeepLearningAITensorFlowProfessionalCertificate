@@ -1,0 +1,10 @@
+#fashion_mnist = tf.keras.dataset.fashion_mnist
+#(train_images, train_labels), (test_images, test_labels)=fashion_mnist.load_data()
+
+https://ai.google/responsibilities/responsible-ai-practices/
+
+model = keras.Sequential([
+    keras.layers.Flatten(input_shape=(28,28)),  #shape 28x28 sqare
+    keras.layers.Dense(128, activation=tf.nn.relu),
+    keras.layers.Dense(10, activation=tf.nn.softmax)
+    ])
